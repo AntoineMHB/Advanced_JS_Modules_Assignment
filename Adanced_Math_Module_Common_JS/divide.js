@@ -1,4 +1,4 @@
-function divide(a, b) {
+export function divide(a, b) {
   if (typeof a !== "number" || typeof b !== "number") {
     throw new Error("Invalid input");
   }
@@ -10,7 +10,3 @@ function divide(a, b) {
 
   return quotient;
 }
-
-module.exports = {
-  divide,
-};

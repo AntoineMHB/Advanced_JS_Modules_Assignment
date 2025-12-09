@@ -1,17 +1,17 @@
-const addition = require("./add");
-const sum = addition.add(3, 5);
+import { add } from "./add.js";
+const sum = add(3, 5);
 
-const difference = require("./substract");
-const diff = difference.substract(7, 4);
+import { substract } from "./substract.js";
+const diff = substract(7, 4);
 
-const multiplication = require("./multiply");
-const product = multiplication.multiply(10, 4);
+import { multiply } from "./multiply.js";
+const product = multiply(10, 4);
 
-const division = require("./divide");
-const quotient = division.divide(48, 5);
+import { divide } from "./divide.js";
+const quotient = divide(48, 5);
 
-const powering = require("./power");
-const pow = powering.power(10, 5);
+import { power } from "./power.js";
+const pow = power(10, 5);
 
 const results = { sum, diff, product, quotient, pow };
 for (let result in results) {
