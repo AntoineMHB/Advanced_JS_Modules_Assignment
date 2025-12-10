@@ -11,3 +11,15 @@ console.log(nameSearch);
 console.log(invalidIdSearch);
 
 console.log(ageSearch);
+
+// QUESTION 11: Module-Based To-Do Manager
+
+import { addTask, removeTask, listTasks } from "./todo.js";
+
+console.log(addTask("Shopping"));
+console.log(addTask("Cleaning"));
+console.log(addTask("Journaling"));
+
+console.log(removeTask());
+
+console.log(listTasks());

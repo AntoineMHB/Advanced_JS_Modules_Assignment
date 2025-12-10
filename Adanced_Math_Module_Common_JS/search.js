@@ -17,7 +17,7 @@ export function searchById(id) {
 
 export function searchByName(name) {
   let notFoundMessage = "No student with that name";
-  let foundStudent = students.filter(
+  let foundStudent = students.find(
     (student) => student.name.toLowerCase() === name.toLowerCase()
   );
   if ((students.name = name)) {
